@@ -6,9 +6,9 @@ CREATE TABLE Student (
 );
 
 
-INSERT INTO Student (ID, CustomerName, PurchaseCar, Address) VALUES
-(1, 'shyam sharma', Toyota, '123 Main St, mumbai'),
-(2, 'Jay Shrivastav', Honda, '456 Elm Ave, patna'),
-(3, 'anushka sharma', audi, '789 Oak Rd, pune'),
-(4, 'vijay shan', Swift, '987 Pine Lane, noida'),
-(5, 'veer patel', TaTa safari, '654 Birch Blvd, balewadi,pune');
+INSERT INTO Student (ID, CustomerName, Age, Address) VALUES
+(1, 'shyam sharma', 20, '123 Main St, pune'),
+(2, 'Jay Shrivastav', 20, '456 Elm Ave, pune'),
+(3, 'anushka sharma', 20, '789 Oak Rd, pune'),
+(4, 'vijay shan', 19, '987 Pine Lane, pune'),
+(5, 'veer patel', 20, '654 Birch Blvd, balewadi,pune');
