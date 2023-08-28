@@ -1,0 +1,17 @@
+SELECT Company, 
+       CASE 
+           WHEN COUNT(*) % 2 = 0 THEN 
+               (SELECT AVG(Salary) 
+                FROM Employee e2 
+                WHERE e1.Company = e2.Company 
+                ORDER BY Salary 
+                LIMIT 1 OFFSET (COUNT(*) / 2) - 1) 
+           ELSE 
+               (SELECT Salary 
+                FROM Employee e2 
+                WHERE e1.Company = e2.Company 
+                ORDER BY Salary 
+                LIMIT 1 OFFSET COUNT(*) / 2) 
+       END AS MedianSalary
+FROM Employee e1
+GROUP BY Company;
