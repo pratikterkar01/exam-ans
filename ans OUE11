@@ -1,0 +1,14 @@
+CREATE TABLE Student (
+    ID INT PRIMARY KEY NOT NULL,
+    Name VARCHAR(20) NOT NULL,
+    Age INT NOT NULL,
+    Address VARCHAR(25)
+);
+
+
+INSERT INTO Student (ID, CustomerName, PurchaseCar, Address) VALUES
+(1, 'shyam sharma', Toyota, '123 Main St, mumbai'),
+(2, 'Jay Shrivastav', Honda, '456 Elm Ave, patna'),
+(3, 'anushka sharma', audi, '789 Oak Rd, pune'),
+(4, 'vijay shan', Swift, '987 Pine Lane, noida'),
+(5, 'veer patel', TaTa safari, '654 Birch Blvd, balewadi,pune');
